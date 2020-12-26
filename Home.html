@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Universe.css">
+  <link rel="icon" href="..\images\logo.png">
+  <title>Space</title>
+</head>
+
+
+<body>
+<div class="main">
+
+  <header>
+    <img src="../images/logo.png" alt="Not found">
+    <h1>Space</h1>
+  </header>
+
+
+
+  <nav>
+    <ul class="main-list">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">BigBang</a>
+      </li>
+      <li>
+        <a href="#">BlackHole</a>
+      </li>
+      <li>
+        <a href="#">Dark Energy</a>
+      </li>
+      <li>
+        <a href="#">Mystery</a>
+      </li>
+      <li>
+        <a href="#">Parallel Universe</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <main>
+
+  <script type="text/javascript">
+    var tm = setInterval(change,2000);
+    var counter = 0;
+    function change(){
+      var c = document.getElementById('switch');
+      if(counter == 0){
+        c.src = "../images/photo17.jpg";
+        counter++;
+      }
+      else if(counter == 1){
+        c.src = "../images/photo18.jpg";
+        counter++;
+      }
+      else{
+        c.src = "../images/photo19.jpg";
+        counter = 0;
+      }
+    }
+
+    function showearth(){
+      var e = document.getElementById("planet");
+      e.src = "../images/earth.png";
+    }
+    function showmercury(){
+      var e = document.getElementById("planet");
+      e.src = "../images/mercury.png";
+    }
+    function showmars(){
+      var e = document.getElementById("planet");
+      e.src = "../images/mars.png";
+    }
+    function showvenus(){
+      var e = document.getElementById("planet");
+      e.src = "../images/venus.png";
+    }
+    function showjupiter(){
+      var e = document.getElementById("planet");
+      e.src = "../images/jupiter.png";
+    }
+    function showsaturn(){
+      var e = document.getElementById("planet");
+      e.src = "../images/saturn.png";
+    }
+    function showuranus(){
+      var e = document.getElementById("planet");
+      e.src = "../images/uranus.png";
+    }
+    function showneptune(){
+      var e = document.getElementById("planet");
+      e.src = "../images/neptune.png";
+    }
+  </script>
+
+  <div id="welcome">
+    <img id="switch" src="../images/photo19.jpg" alt="Not Found">
+    <h2>Welcome</h2>
+    <q>
+      The universe’s imagination always <br>
+       remains wider than our human  <br>
+        imaginations.
+    </q>
+  </div>
+</div>
+
+
+
+  <div id="why-attend">
+    <h2>Why Attend?</h2>
+    <p>
+      Did you ever dream to be an astronaut someday?<br>
+      Do you like to know about the outer space?<br>
+      What is there and how it works?!<br>
+      So you are in the <span>right place</span>.
+    </p>
+    <div class="survey">
+
+      <button class="interested" type="button">
+          Interested
+      </button>
+      <button type="button" class="not-interested">
+          Not Interested
+      </button>
+
+    </div>
+  </div>
+
+
+  <div id="planets">
+
+
+    <h2>Planets</h2>
+    <img id="planet" src="../images/earth.png" alt="Not Found">
+    <div class="catch">
+      <div class="part1">
+
+        <div id="earth" class="box">
+          <h3>Earth</h3>
+          <p>
+              The place we call home,<br>
+               Earth is the third rock from the sun and the only<br>
+                planet with known life on it – and lots of it too!<br><br>
+                <a href="#planet" onclick="showearth()">Read more</a><br><br>
+          </p>
+
+        </div>
+
+        <div id="mercury" class="box">
+          <h3>Mercury</h3>
+          <p>
+            The smallest and fastest planet,<br>
+             Mercury is the closest planet to<br>
+              the Sun and whips around it every 88 Earth days.<br><br>
+              <a href="#planet" onclick="showmercury()">Read more</a><br><br>
+          </p>
+        </div>
+
+        <div id="venus" class="box">
+          <h3>Venus</h3>
+          <p>
+            Spinning in the opposite<br>
+             direction to most planets, Venus is the<br>
+               hottest planet, and one of the brightest objects in the sky.<br><br>
+               <a href="#planet" onclick="showvenus()">Read more</a><br><br>
+          </p>
+        </div>
+
+        <div id="mars" class="box">
+          <h3>Mars</h3>
+          <p>
+            The red planet is dusty, cold <br>
+            world with a thin atmosphere and <br>
+            is home to four NASA robots.<br><br><br>
+            <a href="#planet" onclick="showmars()">Read more</a><br><br>
+          </p>
+        </div>
+      </div>
+      <div class="part2">
+        <div id="jupiter" class="box">
+          <h3>Jupiter</h3>
+          <p>
+            Jupiter is a massive planet,<br>
+             twice the size of all other<br>
+             planets combined and has a centuries-old storm<br>
+              that is bigger than Earth.<br><br>
+              <a href="#planet" onclick="showjupiter()">Read more</a><br><br>
+          </p>
+        </div>
+
+        <div id="saturn" class="box">
+          <h3>Saturn</h3>
+          <p>
+            The most recognizable planet with a <br>
+             system of icy rings, Saturn is a very unique <br>
+              and interesting planet.<br><br>
+              <a href="#planet" onclick="showsaturn()">Read more</a><br><br>
+          </p>
+        </div>
+
+        <div id="uranus" class="box">
+          <h3>Uranus</h3>
+          <p>
+            Uranus has a very unique rotation–it <br>
+            spins on its side at an almost 90-degree angle,<br>
+             unlike other planets.<br><br>
+             <a href="#planet" onclick="showuranus()">Read more</a><br><br>
+          </p>
+        </div>
+
+        <div id="neptune" class="box">
+          <h3>Neptune</h3>
+          <p>
+            Neptune is now the most distant <br>
+            planet and is a cold and dark world nearly 3 billion miles <br>
+             from the Sun.<br><br>
+             <a href="#planet" onclick="showneptune()">Read more</a><br><br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="sun-moon">
+    <h2>Sun and Moon</h2>
+    <div class="pictures">
+
+    <div id="moon">
+      <h3>Moon</h3>
+      <img src="../images/photo22.jpg" alt="">
+      <p>
+        The only place beyond Earth that humans have explored,<br>
+         the Moon is the largest and brightest
+        object in our sky <br>
+        – responsible for the tides <br>
+         and keeping Earth stable on its axis.
+      </p>
+    </div>
+    <div id="sun">
+      <h3>Sun</h3>
+      <img src="../images/photo23.jpg" alt="">
+      <p>
+        The Sun is the heart of our solar system <br>
+         and its gravity is what keeps every <br>
+          planet and particle in orbit.<br>
+        This yellow dwarf star is just one of billions <br>
+         like it across the Milky Way galaxy.
+      </p>
+    </div>
+    <div class="eclipse">
+      <img src="" alt="">
+    </div>
+  </div>
+  </div>
+
+
+  <div id="theories">
+    <h2>Theories</h2>
+
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">BigBang</a>
+      </li>
+      <li>
+        <a href="#">BlackHole</a>
+      </li>
+      <li>
+        <a href="#">Parallel Universe</a>
+      </li>
+      <li>
+        <a href="#">Dark Energy</a>
+      </li>
+      <li>
+        <a href="#">Mystery</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <div id="questions">
+    <h2>Questions</h2>
+    <h3>Share your ideas and opinions</h3>
+    <p>
+      If you have questions to ask or information to share
+    </p>
+    <h3>Help Us To Know</h3>
+  </div>
+
+  </main>
+
+
+  <footer>
+    <ul>
+      <li>
+        <h3><a href="#questions">Questions</a></h3>
+      </li>
+      <li>
+        <h3><a href="#theories">Theories</a></h3>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">BigBang</a>
+          </li>
+          <li>
+            <a href="#">BlackHole</a>
+          </li>
+          <li>
+            <a href="#">Parallel Universe</a>
+          </li>
+          <li>
+            <a href="#">Dark Energy</a>
+          </li>
+          <li>
+            <a href="#">Mystery</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h3>Planets</h3>
+        <ul>
+          <li>
+            <a href="#earth">Earth</a>
+          </li>
+          <li>
+            <a href="#mercury">Mercury</a>
+          </li>
+          <li>
+            <a href="#Venus">Venus</a>
+          </li>
+          <li>
+            <a href="#mars">Mars</a>
+          </li>
+          <li>
+            <a href="#jupiter">Jupiter</a>
+          </li>
+          <li>
+            <a href="#saturn">Saturn</a>
+          </li>
+          <li>
+            <a href="#uranus">Uranus</a>
+          </li>
+          <li>
+            <a href="#neptune">Neptune</a>
+          </li>
+          <li>
+            <a href="#pluto">Pluto</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h3><a href="#sun-moon">Sun|Moon</a></h3>
+      </li>
+    </ul>
+    <div class="copyright">
+      <small>
+        <i>
+          copyright &copy; are reserved 2021 <br>
+          LU students
+        </i>
+      </small>
+    </div>
+  </footer>
+
+
+</body>
+
+
+</html>
+<!--“The world hides in darkness, the universe hides in light.”
+― Matshona Dhliwayo
+The Universe has a much greater imagination than we do,
+ which is why the real story of the universeis far more interesting than any of the fairy tales
+we have invented to describe it.
+-->

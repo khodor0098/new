@@ -1,0 +1,374 @@
+*{
+  box-sizing : border-box;
+}
+
+body{
+  margin: 0px;
+}
+
+
+
+.main{
+  background-image:  url("../images/photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  height : 100vh;
+  overflow: hidden;
+}
+
+header{
+  display: flex;
+  animation : varient 5s ease 0s infinite;
+}
+
+header img{
+  width : auto;
+  height: 100px;
+  margin-top: 10px;
+}
+
+header h1{
+  font-size: 50px;
+  letter-spacing: 8px;
+  font-weight: bold;
+  font-family: cursive;
+  font-variant: small-caps;
+
+}
+
+.main-list{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top : 50px;
+  right : 50px;
+}
+
+.main-list li{
+  padding : 8px;
+  width : 150px;
+  text-align: center;
+  border-right: solid 4px #eeba30;
+  transition: border 0.5s ease 0s;
+}
+
+.main-list a{
+  text-decoration: none;
+  color : #eeba30;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: serif;
+  font-variant: small-caps;
+  transition : color 0.5s linear 0s;
+}
+ .main-list li:hover{
+   border-bottom: solid 4px #eeba30;
+   background : #222f5b;
+ }
+ .main-list li:hover a{
+   color : white;
+ }
+
+
+#welcome{
+  position: relative;
+  top : -100px;
+  left : 100px;
+  color : white;
+}
+
+#welcome img{
+  position: relative;
+  right : 200px;
+  top : 60px;
+  border-radius: 20px;
+  width : 500px;
+  height : auto;
+  float : right;
+  box-shadow: 2px 2px 5px white;
+}
+
+#welcome h2{
+  font-size: 180px;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+#welcome q{
+  position: relative;
+  top : -100px;
+  left : 100px;
+  font-size: 30px;
+  word-spacing: 8px;
+
+}
+
+#why-attend{
+  background: brown;
+  height : 70vh;
+  width: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+#why-attend h2{
+  margin-top: 0px;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: cursive;
+  position: relative;
+  top : 40px;
+  left : 20px;
+  color : white;
+}
+
+#why-attend p{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive;
+  margin-left: 50px;
+  color: #C5E1A5;
+}
+
+#why-attend .survey{
+  position : absolute;
+  color : white;
+  top :100px;
+  right : 200px;
+}
+
+
+#why-attend .interested:hover,#why-attend .not-interested:hover{
+  cursor: pointer;
+}
+
+#planets{
+  background-color: #9E9E9E;
+  z-index: -2;
+}
+
+#planets h2{
+  margin : 0px;
+  text-align: center;
+  font-size: 100px;
+  color : white;
+  font-weight: bold;
+  font-family: cursive;
+  z-index: 1;
+
+}
+
+.part1,.part2{
+  display: flex;
+
+}
+
+.box{
+  margin : 30px 30px;;
+  width : 40%;
+  box-shadow: 2px 2px 5px white;
+  position: relative;
+  z-index: 0;
+}
+
+.box h3{
+  margin : 0px;
+  color : #283593;
+  background-color: #eeba30 ;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive;
+  font-variant: small-caps;
+}
+
+.box p{
+  margin : 0px;
+  color : white;
+  background-color: #9E9E9E;
+  text-align: center;
+  font-family: serif;
+  line-height: 30px;
+  font-size: 120%;
+}
+
+.box::before{
+  content: '';
+  position: absolute;
+  top : -2px;
+  bottom : -2px;
+  right : -2px;
+  left : -2px;
+  background-color: white;
+  z-index: -1;
+  transform: skewX(2deg);
+  transform: skewY(2deg);
+}
+
+.box::after{
+  content: '';
+  position: absolute;
+  top : -2px;
+  bottom : -2px;
+  right : -2px;
+  left : -2px;
+  background-color: white;
+  z-index: -2;
+  filter : blur(40px);
+}
+
+.box:nth-child(1)::before{
+  background : linear-gradient(315deg,#ff0057,#e64a19);
+}
+.box:nth-child(2)::before{
+  background : linear-gradient(315deg,#89ff00,#00bcd4);
+}
+.box:nth-child(3)::before{
+  background : linear-gradient(315deg,#e91e63,#5d02ff);
+}
+.box:nth-child(4)::before{
+  background : linear-gradient(315deg,#ff0000,#ffc107);
+}
+.box:nth-child(5)::before{
+  background : linear-gradient(315deg,#ff0000,#ffc107);
+}
+.box:nth-child(6)::before{
+  background : linear-gradient(315deg,#e91e63,#5d02ff);
+}
+.box:nth-child(7)::before{
+  background : linear-gradient(315deg,#89ff00,#00bcd4);
+}
+.box:nth-child(8)::before{
+  background : linear-gradient(315deg,#ff0057,#e64a19);
+}
+.box:nth-child(9)::before{
+  background : linear-gradient(315deg,#aa00ff,#afb4bb);
+}
+
+.box a{
+  display : none;
+}
+
+.box:hover a{
+  display: inline;
+  text-decoration: none;
+  border : solid 2px white;
+  font-weight: bold;
+  padding: 10px;
+  box-shadow: 1px 1px 2px white;
+  background: inherit;
+  color : white;
+  transition: color 1s ease 0s;
+  transition: background 1s ease 0s;
+}
+
+.box a:hover{
+  background : white;
+  color : grey;
+}
+
+#mercury,#mars,#jupiter,#saturn,#uranus,#neptune{
+  height : 100%;
+}
+
+#planets img{
+  margin: 100px 430px;
+  margin-top: 50px;
+}
+
+#sun-moon{
+  background: url("../images/photo24.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height : 110vh;
+}
+
+#sun-moon h2{
+  margin-top: 0px;
+  font-size: 100px;
+  color: white;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+#sun-moon img{
+  width: 398px;
+  height : auto;
+}
+
+#moon{
+  float : right;
+  width : 400px;
+  height: auto;
+  margin-right: 22px;
+  border : solid 2px #1A237E;
+}
+#sun{
+  width : 400px;
+  height: auto;
+  margin-left: 22px;
+  border : solid 2px #FCBB42;
+}
+
+#moon h3,#sun h3{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size : 50px;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+}
+
+#moon p,#sun p{
+  margin-top: -5px;
+  margin-bottom: 0px;
+  padding: 5px;
+  font-size : 20px;
+  text-align: center;
+  color : white;
+}
+
+#sun h3,#sun p{
+  background-color: #FCBB42;
+  color: #1A237E;
+}
+#moon h3,#moon p{
+  background-color: #1A237E;
+  color: #FCBB42;
+}
+
+
+
+@keyframes varient{
+  0%{
+    color: rgb(100,100,150);
+    text-shadow: 1px 1px 4px #740001;
+    transform: rotate(1deg);
+  }
+  25%{
+    color: #740001;
+    text-shadow: 1px 1px 4px #1a472a;
+    transform: rotate(-1deg);
+  }
+  50%{
+    color: #1a472a;
+    text-shadow: 1px 1px 4px #ecb939;
+    transform: rotate(1deg);
+  }
+  75%{
+    color: #ecb939;
+    text-shadow: 1px 1px 4px #5d5d5d;
+    transform: rotate(-1deg);
+  }
+  100%{
+    color: #5d5d5d;
+    text-shadow: 1px 1px 4px rgb(100,100,150);
+    transform: rotate(1deg);
+  }
+
+}
